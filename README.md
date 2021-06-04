@@ -7,13 +7,13 @@ The szenario of this example is the following:
 A resource server is using the keycloak-spring-boot-starter adapter for authentification and authorization,
 which means it has the following lines in ints application.properties:
 
-keycloak.realm=spring-boot-quickstart
-keycloak.auth-server-url=http://localhost:8180/auth
-keycloak.ssl-required=external
-keycloak.resource=app-authz-springboot
-keycloak.public-client=false
-keycloak.credentials.secret=secret
-keycloak.policy-enforcer-config.on-deny-redirect-to=/api/accessDenied
+keycloak.realm=spring-boot-quickstart  
+keycloak.auth-server-url=http://localhost:8180/auth  
+keycloak.ssl-required=external  
+keycloak.resource=app-authz-springboot  
+keycloak.public-client=false  
+keycloak.credentials.secret=secret  
+keycloak.policy-enforcer-config.on-deny-redirect-to=/api/accessDenied  
 
 The last line will make the resource server cache the authorization policies and it's paths from keycloak.
 The resource server is serving some files und the path /api/data-offer/{data-offer-number}
